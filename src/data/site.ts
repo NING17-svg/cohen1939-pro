@@ -24,14 +24,15 @@ export interface SiteConfig {
 }
 
 export const site: SiteConfig = {
-  name: "Template Game Guide",
-  brandMark: "GG",
-  gameName: "Template Game",
-  domain: "example.com",
-  baseUrl: (process.env.NEXT_PUBLIC_SITE_URL || "https://example.com").replace(/\/$/, ""),
+  name: "Cohen 1939 Guide",
+  brandMark: "C39",
+  gameName: "Cohen 1939",
+  domain: "cohen1939.pro",
+  baseUrl: (process.env.NEXT_PUBLIC_SITE_URL || "https://cohen1939.pro").replace(/\/$/, ""),
   description:
-    "A neutral game guide hub template for launch pages, wiki notes, guides, release information, and FAQs.",
-  tagline: "Guides, wiki notes, release info, and launch FAQs in one clean hub.",
+    "Independent launch reference hub for Cohen 1939 — release date, Steam AppID, Windows-only platform scope, supported languages, story and characters, top-down twin-stick gameplay, system requirements, and price.",
+  tagline:
+    "Launch reference for Cohen 1939 — release date, Steam scope, story, characters, top-down twin-stick gameplay, and Windows PC specs.",
   primaryLocale: "en-US",
   locales: [
     {
@@ -53,16 +54,29 @@ export const site: SiteConfig = {
       },
     },
   ],
-  author: "Template Game Guide",
+  author: "Cohen 1939 Guide",
   gaMeasurementId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "",
   bingSiteAuthCode: process.env.NEXT_PUBLIC_BING_SITE_AUTH_CODE || "",
   officialSources: [
     {
-      label: "Official website",
-      href: "https://example.com",
-      description: "Replace this with the game publisher or developer website.",
+      label: "Cohen 1939 on Steam",
+      href: "https://store.steampowered.com/app/3582120",
+      description:
+        "Official Steam store page for Cohen 1939 (AppID 3582120 by Cube of Cube / 2P Games).",
+    },
+    {
+      label: "Cohen 1939 on SteamDB",
+      href: "https://steamdb.info/app/3582120/",
+      description:
+        "Dated SteamDB snapshot for Cohen 1939 (AppID 3582120) — used as wiki/reference dated source.",
+    },
+    {
+      label: "Cohen 1939 Steam Community hub",
+      href: "https://steamcommunity.com/app/3582120",
+      description:
+        "Steam Community hub for Cohen 1939 — community/video demand signal only, not a primary current-game fact.",
     },
   ],
   disclaimer:
-    "This is an unofficial fan guide template. Replace placeholder facts with official sources before launch.",
+    "Cohen 1939 is an independent, unofficial fan guide. It is not affiliated with Cube of Cube, 2P Games, Valve, or Steam. All game facts are sourced from the Steam store page for AppID 3582120 and the dated SteamDB snapshot as of 2026-09-30.",
 };
